@@ -8,7 +8,6 @@ public class ECommerceAPIContext : DbContext
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
-
         // ChangeTracker : Entityler üzerinden yapılan değişikliklerin ya da yeni eklenen verinin yakalanmasını sağlayan propertydir. Update operasyonlarında track edilen verileri yakalayıp elde etmemizi sağlar.
         // Interceptor inşa ederek, kod tekrarına düşmüyoruz. CreateDate, UpdateDate, Status gibi durumları burda ele alabiliriz.
 
